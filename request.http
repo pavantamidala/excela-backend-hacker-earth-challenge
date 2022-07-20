@@ -1,0 +1,29 @@
+
+### create bill
+POST http://localhost:3000/bills
+Content-Type: application/json
+
+{
+    "billDate":1,
+    "paidDate":2,
+    "units":1,
+    "amount":8000000
+}
+### get bill 
+GET http://localhost:3000/bills/200
+
+
+### remove bill 
+DELETE  http://localhost:3000/bills/20
+
+### update bill 
+PATCH  http://localhost:3000/bills/2
+Content-Type: application/json
+
+{
+
+    "billDate":1,
+    "paidDate":2,
+    "units":1,
+    "amount":200
+}
